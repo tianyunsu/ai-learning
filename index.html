@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- AI 学习笔记首页：轻量静态落地页，风格与各篇交互读本一致；纸白/深蓝/青绿/琥珀。无外部依赖。 -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AI 学习笔记：从第一性原理出发，理解人工智能的机制与原理。收录单文件交互读本与原始文献。">
+<title>AI 学习笔记 · 原理读本</title>
+<style>
+:root{--paper:#f7f5ef;--card:#fffdf8;--ink:#193342;--muted:#526775;--line:#d6dedb;--teal:#146c67;--soft:#e8f2ee;--amber:#aa4e17;--sand:#f9e8d6;--navy:#122d3b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.85 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--teal);text-underline-offset:4px}
+a:focus-visible{outline:3px solid var(--amber);outline-offset:4px}
+::selection{background:#d7e9de}
+.wrap{max-width:1060px;margin:auto;padding:0 32px}
+.bar{background:var(--paper);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px;font-size:13px;letter-spacing:1px}
+.brand{font-weight:750}
+.hero{background:var(--navy);color:#fffaf0;padding:78px 0 60px}
+.eyebrow{font-size:13px;letter-spacing:2px;color:#aed6cc}
+.hero h1{font-size:clamp(36px,6.5vw,62px);line-height:1.2;letter-spacing:-1.5px;margin:18px 0}
+.hero h1 em{font-style:normal;color:#efb77e}
+.lead{max-width:760px;font-size:20px;color:#dbe8e6;margin:0}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.tag{font-size:13px;color:#cfe3dd;border:1px solid #54717d;border-radius:20px;padding:5px 14px}
+main{padding:56px 0 20px}
+.sec-label{color:var(--teal);font-size:13px;letter-spacing:1px;font-weight:750}
+h2{font-size:clamp(24px,3.4vw,30px);margin:10px 0 24px;letter-spacing:-.5px}
+.list{display:grid;gap:20px}
+.item{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 28px;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.item:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(18,45,59,.10);border-color:#aec6bf}
+.item .pill{display:inline-block;font-size:12px;padding:3px 11px;background:var(--soft);color:var(--teal);border-radius:20px;margin-bottom:14px}
+.item h3{font-size:22px;margin:0 0 10px;letter-spacing:-.3px}
+.item p{margin:0;color:var(--muted);font-size:16px}
+.item .go{display:inline-block;margin-top:16px;color:var(--teal);font-size:15px;font-weight:650}
+.item .go::after{content:" →"}
+.empty{color:var(--muted);font-size:15px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 40px;color:var(--muted);font-size:13px}
+@media(max-width:700px){.wrap{padding:0 20px}.hero{padding:48px 0 40px}.lead{font-size:18px}.item{padding:20px}.item h3{font-size:20px}}
+@media print{body{background:white}.hero{background:white;color:var(--ink)}.hero h1 em,.lead,.eyebrow{color:var(--ink)}.tag{color:var(--ink);border-color:var(--line)}}
+</style>
+</head>
+<body>
+<header class="bar"><div class="wrap"><span class="brand">AI 学习笔记 · AI NOTES</span><span>原理读本 / 在线版</span></div></header>
+<div class="hero"><div class="wrap">
+<div class="eyebrow">从第一性原理出发</div>
+<h1>理解人工智能，<br>从<em>机制</em>开始。</h1>
+<p class="lead">这里收录按主题整理的单文件交互读本：概念示意图、可以动手做的实验，以及可核查的原始文献。</p>
+<div class="tags"><span class="tag">单文件 · 离线可读</span><span class="tag">交互实验</span><span class="tag">中文</span></div>
+</div></div>
+<main><div class="wrap">
+<div class="sec-label">目录 / 全部读本</div>
+<h2>已发布</h2>
+<div class="list">
+<a class="item" href="prediction-to-reasoning.html">
+<span class="pill">语言模型 · 交互读本</span>
+<h3>从预测到推理：Transformer 的第一性原理</h3>
+<p>为什么“预测下一个 token”的模型，却能够计算、推导和推理？含可交互的逻辑门、逐位加法器与配方法推导。</p>
+<span class="go">打开读本</span>
+</a>
+</div>
+</div></main>
+<footer><div class="wrap">AI 学习笔记 · 从输出目标，走向计算机制。<br>本页与各读本均为单文件静态页面；文中的文献链接需联网访问。</div></footer>
+</body>
+</html>
